@@ -1,0 +1,57 @@
+/* Estilos para a página */
+body {
+  background: linear-gradient(rgb(81, 255, 0), rgb(242, 242, 242), rgb(0, 255, 255), rgb(242, 242, 242));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; /* Removendo margens padrão */
+  font-family: Arial, sans-serif; /* Definindo a fonte para a página */
+  color: #333; /* Definindo a cor do texto para a página */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 150px; /* Ajustando o tamanho da logo */
+  margin-bottom: 10px; /* Espaço entre a logo e o título */
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.table-container {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo branca com transparência (para suavizar o gradiente) */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333; /* Definindo a cor do texto para a tabela */
+  overflow-x: auto; /* Adicionando scroll horizontal se necessário */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Media query para telas menores */
+@media screen and (max-width: 768px) {
+  .table-container {
+    width: 95%; /* Reduzindo a largura da tabela */
+    font-size: 12px; /* Diminuindo o tamanho da fonte para telas menores */
+  }
+}
